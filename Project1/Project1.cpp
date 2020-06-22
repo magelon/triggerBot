@@ -56,7 +56,8 @@ void ToggleKey(BYTE key, bool set) {
 
 void MouseDown() {
 	ToggleKey(VK_LBUTTON, true);
-	Sleep(1);
+	//gun like vandal's first three shots are accurate
+	Sleep(300);
 	ToggleKey(VK_LBUTTON, false);
 }
 
@@ -201,7 +202,7 @@ bool CaptureNextFrame() {
 	ID3D11Texture2D* currTexture;
 
 	hr = lDeskDupl->AcquireNextFrame(
-		999999,
+		INFINITE,
 		&lFrameInfo,
 		&lDesktopResource);
 
