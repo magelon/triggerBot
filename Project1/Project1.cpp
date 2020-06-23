@@ -1,3 +1,5 @@
+//this is an trigger bot script found in unknowcheat website 
+//trigger bot can be better used in defensive fighting style
 #include <wrl/client.h>
 #include <windows.h>
 #include <iostream>
